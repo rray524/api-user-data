@@ -1,5 +1,5 @@
 const express = require('express');
-const { getAllUsers, addUser, getOneUser, deleteUser } = require('../../controllers/userController');
+const { getAllUsers, addUser, getOneUser, deleteUser, updateUser } = require('../../controllers/userController');
 const router = express.Router()
 
 router
@@ -71,4 +71,5 @@ router.route("/:random")
  */
 router.route("/:id")
     .delete(deleteUser)
+
 module.exports = router;

@@ -13,8 +13,11 @@ app.use(express.json());
 app.use("/api/v1/user/all", userRoutes);
 //create a user
 app.use("/api/v1/user/save", userRoutes);
+// random user
 app.use("/api/v1/user", userRoutes);
+//delete user
 app.use("/api/v1/user/delete", userRoutes);
+
 
 
 

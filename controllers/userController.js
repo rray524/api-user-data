@@ -86,7 +86,7 @@ module.exports.addUser = (req, res, next) => {
 module.exports.deleteUser = (req, res, next) => {
 
     // find all users from json file
-    const users = require("./userData.json");
+    let users = require("./userData.json");
     // get id from params
     const { id } = req.params;
     let a = [];
@@ -130,3 +130,5 @@ module.exports.deleteUser = (req, res, next) => {
         });
     }
 };
+
+
